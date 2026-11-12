@@ -1,0 +1,27 @@
+# === Не публикуем (репо публичный!) ===
+
+# Внутренние доки: цены, скрипты возражений, инструкции запуска
+SEO-READY.md
+CHECKLIST-DEMO.md
+
+# Агентские тулзы
+.agents/
+skills-lock.json
+.claude/
+
+# Локальная генерация ассетов (og-image/иконки уже собраны)
+scripts/
+
+# Демо не индексируется через meta noindex — sitemap не нужен
+sitemap.xml
+
+# Временные
+tmp/
+tmp_dl/
+
+# ОС и редакторы
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/

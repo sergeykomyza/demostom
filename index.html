@@ -1,0 +1,776 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.documentElement.classList.add('js');</script>
+
+  <!-- ======== Демо: https://sergeykomyza.github.io/demostom/ — для клиента заменить домен на его (см. SEO-READY.md) ======== -->
+  <title>Стоматология «Эмаль» в Москве — запись на приём онлайн</title>
+  <meta name="description" content="Лечение зубов без боли: план и смета до начала работ, гарантия 2 года, врачи со стажем от 8 лет. Запись через сайт, подтверждение за 15 минут.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://sergeykomyza.github.io/demostom/">
+  <meta name="geo.region" content="RU-MOW">
+  <meta name="geo.placename" content="Москва">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="Стоматология «Эмаль»">
+  <meta property="og:title" content="Стоматология «Эмаль» в Москве — запись на приём онлайн">
+  <meta property="og:description" content="Лечение зубов без боли: план и смета до начала работ, гарантия 2 года, врачи со стажем от 8 лет.">
+  <meta property="og:url" content="https://sergeykomyza.github.io/demostom/">
+  <meta property="og:image" content="https://sergeykomyza.github.io/demostom/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Стоматология «Эмаль» в Москве — запись на приём онлайн">
+  <meta name="twitter:description" content="Лечение зубов без боли: план и смета до начала работ, гарантия 2 года.">
+  <meta name="twitter:image" content="https://sergeykomyza.github.io/demostom/og-image.png">
+
+  <!-- Icons / manifest -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#F6F5F1">
+
+  <!-- Fonts: самохостинг (css/fonts.css + fonts/) -->
+  <link rel="stylesheet" href="css/fonts.css">
+
+  <!-- Icons: самохостинг (css/icons-*.css + fonts/phosphor-*.woff2) -->
+  <link rel="stylesheet" href="css/icons-regular.css">
+  <link rel="stylesheet" href="css/icons-fill.css">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- ======== JSON-LD: организация ======== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "Стоматология «Эмаль»",
+    "url": "https://sergeykomyza.github.io/demostom/",
+    "telephone": "+7 (495) 120-38-47",
+    "image": "https://sergeykomyza.github.io/demostom/og-image.png",
+    "priceRange": "₽₽",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "ул. Малая Бронная, 12",
+      "addressLocality": "Москва",
+      "addressRegion": "Москва",
+      "postalCode": "123104",
+      "addressCountry": "RU"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": "55.7622", "longitude": "37.5916" },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "21:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "20:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "10:00", "closes": "18:00" }
+    ],
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "278" }
+  }
+  </script>
+
+  <!-- ======== JSON-LD: FAQ (тексты совпадают с видимыми на странице) ======== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Сколько стоит первичный приём?", "acceptedAnswer": { "@type": "Answer", "text": "Консультация с планом лечения стоит 1 400 ₽. Если вы начинаете лечение в тот же день, сумма вычитается из его стоимости." } },
+      { "@type": "Question", "name": "Больно ли будет?", "acceptedAnswer": { "@type": "Answer", "text": "Нет. Мы используем бережную анестезию и седацию. 87% пациентов, которые боялись стоматологов, отметили, что всё прошло комфортнее ожиданий." } },
+      { "@type": "Question", "name": "Как быстро вы снимете острую боль?", "acceptedAnswer": { "@type": "Answer", "text": "При острой боли записываем на день обращения. Обычно хватает одного визита: осмотр, снимок и первое вмешательство." } },
+      { "@type": "Question", "name": "Я боюсь стоматологов. Что вы предложите?", "acceptedAnswer": { "@type": "Answer", "text": "Первый визит можно пройти без лечения: осмотр, снимок и разговор с врачом. Для дальнейшего лечения подойдёт седация, вы будете спать и почти ничего не запомните." } },
+      { "@type": "Question", "name": "Смета может вырасти в процессе?", "acceptedAnswer": { "@type": "Answer", "text": "Нет. План и стоимость фиксируются до начала работ. Если врач находит новый вопрос, лечение останавливается, и изменения согласовываются с вами до продолжения." } },
+      { "@type": "Question", "name": "Какая гарантия на лечение?", "acceptedAnswer": { "@type": "Answer", "text": "Два года по договору на пломбы, коронки и импланты. Если с работой возникает проблема, переделываем бесплатно." } },
+      { "@type": "Question", "name": "Можно ли перенести или отменить запись?", "acceptedAnswer": { "@type": "Answer", "text": "Да, без штрафов. Напишите нам в мессенджер или позвоните, и мы подберём другое время." } },
+      { "@type": "Question", "name": "Работаете ли вы с ДМС?", "acceptedAnswer": { "@type": "Answer", "text": "Да, мы принимаем основные программы ДМС. Уточните свою у администратора при записи." } }
+    ]
+  }
+  </script>
+
+  <!-- ======== Аналитика: раскомментируйте и подставьте свои ID (см. SEO-READY.md) ========
+  <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    ym(YOUR_METRIKA_ID, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true });
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/YOUR_METRIKA_ID" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+  -->
+</head>
+<body>
+  <a class="skip-link" href="#content">Перейти к содержанию</a>
+
+  <!-- ======== Прелоадер ======== -->
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader-inner">
+      <span class="preloader-brand">Эмаль</span>
+      <span class="preloader-bar"><span class="preloader-fill"></span></span>
+    </div>
+  </div>
+
+  <!-- ======== Навигация ======== -->
+  <header class="nav-wrap">
+    <nav class="nav" aria-label="Основная навигация">
+      <a class="nav-brand" href="#top" aria-label="Эмаль, на главную">
+        <span class="brand-mark" aria-hidden="true">Э</span>
+        <span class="brand-name">Эмаль</span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a class="nav-link" href="#uslugi">Услуги</a></li>
+        <li><a class="nav-link" href="#vrachi">Врачи</a></li>
+        <li><a class="nav-link" href="#otzyvy">Отзывы</a></li>
+        <li><a class="nav-link" href="#voprosy">Вопросы</a></li>
+        <li><a class="nav-link" href="#kontakty">Контакты</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a class="nav-phone" href="tel:+74951203847"><i class="ph ph-phone" aria-hidden="true"></i><span>+7 (495) 120-38-47</span></a>
+        <a class="btn btn-primary btn-nav" href="#kontakty">Записаться</a>
+        <button class="burger" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Открыть меню">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ======== Мобильное меню ======== -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <ul class="mobile-links" role="list">
+      <li><a class="mobile-link" href="#uslugi">Услуги</a></li>
+      <li><a class="mobile-link" href="#vrachi">Врачи</a></li>
+      <li><a class="mobile-link" href="#otzyvy">Отзывы</a></li>
+      <li><a class="mobile-link" href="#voprosy">Вопросы</a></li>
+      <li><a class="mobile-link" href="#kontakty">Контакты</a></li>
+    </ul>
+    <div class="mobile-extra">
+      <a class="mobile-phone" href="tel:+74951203847">+7 (495) 120-38-47</a>
+      <p class="caption-2">Будни с 9:00 до 21:00 · выходные с 10:00</p>
+    </div>
+  </div>
+
+  <!-- ======== Рельса глав (десктоп) ======== -->
+  <div class="chapter-rail" aria-hidden="true">
+    <span class="chapter-rail-num" data-chapter>01</span>
+    <span class="chapter-rail-line"><span class="chapter-rail-fill"></span></span>
+    <span class="chapter-rail-total">08</span>
+  </div>
+
+  <main id="content">
+    <!-- ======== 1. Hero ======== -->
+    <section class="hero" id="top">
+      <div class="hero-bg" aria-hidden="true">
+        <video class="hero-media" autoplay muted loop playsinline preload="metadata"
+          poster="media/hero-poster.jpg"
+          aria-label="Интерьер стоматологии: светлый кабинет с оборудованием">
+          <source src="media/hero-540.mp4" type="video/mp4" media="(max-width: 768px)">
+          <source src="media/hero-720.mp4" type="video/mp4">
+        </video>
+        <div class="hero-scrim"></div>
+      </div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="hero-eyebrow mono-label" data-intro="fade">Стоматология в центре Москвы · метро Маяковская</p>
+          <h1 class="heading-1 heading-gradient hero-title">
+            <span class="line"><span class="line-inner">Лечение зубов без боли</span></span>
+            <span class="line"><span class="line-inner">и без сюрпризов в счёте</span></span>
+          </h1>
+          <p class="hero-sub body-3" data-intro="fade">План лечения и точная смета до начала работ, бережная анестезия и врачи со стажем от 8 лет. Запись через сайт за минуту.</p>
+          <div class="hero-rotator" data-intro="fade">
+            <span class="mono-label hero-rotator-index" aria-hidden="true"><span data-rotator-index>01</span>&nbsp;/&nbsp;04</span>
+            <div class="hero-rotator-line">
+              <span class="hero-rotator-item is-current">Больно — не у нас.</span>
+              <span class="hero-rotator-item">Смета не растёт в процессе.</span>
+              <span class="hero-rotator-item">Гарантия — два года по договору.</span>
+              <span class="hero-rotator-item">Запись подтверждаем за 15 минут.</span>
+            </div>
+          </div>
+          <div class="hero-cta" data-intro="fade">
+            <a class="btn btn-primary btn-lg magnetic" href="#kontakty">Записаться на приём<i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+          </div>
+          <div class="hero-trust" data-intro="fade">
+            <span class="stars" aria-hidden="true">
+              <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+            </span>
+            <span class="caption-2"><strong>4,9</strong> на Яндекс Картах · 278 отзывов · работаем с 2013 года</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <span class="hero-deco" aria-hidden="true">ЭМАЛЬ</span>
+          <div class="hero-cards" aria-hidden="true" data-depth="0.06">
+            <div class="mock-card" data-intro="card">
+              <div class="mock-head">
+                <span class="title-3">Запись на приём</span>
+                <span class="mock-badge"><i class="ph ph-clock" aria-hidden="true"></i>сегодня свободно</span>
+              </div>
+              <div class="mock-chips">
+                <span class="chip is-active">Консультация</span>
+                <span class="chip">Гигиена</span>
+                <span class="chip">Кариес</span>
+              </div>
+              <div class="mock-slots">
+                <span class="slot">09:30</span>
+                <span class="slot">11:00</span>
+                <span class="slot is-active">14:20</span>
+                <span class="slot">16:40</span>
+              </div>
+              <div class="mock-input"><i class="ph ph-phone" aria-hidden="true"></i>+7 (___) ___-__-__</div>
+              <span class="btn btn-primary mock-btn">Записаться</span>
+            </div>
+            <div class="float-card float-review" data-depth="0.12" data-intro="card">
+              <span class="stars" aria-hidden="true"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></span>
+              <p class="caption-2">«Было комфортнее, чем я ожидала»</p>
+              <span class="float-who"><span class="avatar avatar-xs">ИК</span>Ирина К.</span>
+            </div>
+            <div class="float-card float-stat" data-depth="0.1" data-intro="card">
+              <i class="ph ph-users-three" aria-hidden="true"></i>
+              <span class="caption-2"><strong>23 600</strong> пациентов с 2013 года</span>
+            </div>
+            <div class="float-card float-badge" data-depth="0.14" data-intro="card">
+              <i class="ph ph-shield-check" aria-hidden="true"></i>
+              <span class="caption-3">Гарантия 2 года</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll mono-label" aria-hidden="true">
+        <span>Листайте вниз</span>
+        <span class="hero-scroll-line"><span class="hero-scroll-dot"></span></span>
+      </div>
+    </section>
+
+    <!-- ======== 2a. Бегущая строка доверия ======== -->
+    <div class="marquee">
+      <div class="marquee-skew">
+        <div class="marquee-track">
+        <ul class="marquee-list" role="list">
+          <li>23 600 пациентов с 2013 года</li>
+          <li>Рейтинг 4,9 на Яндекс Картах</li>
+          <li>Гарантия 2 года по договору</li>
+          <li>Врачи со стажем от 8 лет</li>
+          <li>Острая боль — приём в день обращения</li>
+          <li>Подтверждение записи за 15 минут</li>
+        </ul>
+        <ul class="marquee-list" aria-hidden="true">
+          <li>23 600 пациентов с 2013 года</li>
+          <li>Рейтинг 4,9 на Яндекс Картах</li>
+          <li>Гарантия 2 года по договору</li>
+          <li>Врачи со стажем от 8 лет</li>
+          <li>Острая боль — приём в день обращения</li>
+          <li>Подтверждение записи за 15 минут</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======== 2. Tagline reveal ======== -->
+    <section class="tagline">
+      <div class="container">
+        <h2 class="heading-3 tagline-text">Страх перед стоматологом заканчивается <span class="tagline-hl"><span class="tagline-hl-line" aria-hidden="true"></span>на первом приёме</span>. Дальше остаются только здоровые зубы и понятный счёт.</h2>
+      </div>
+    </section>
+
+    <!-- ======== 3. Проблема и решение ======== -->
+    <section class="section problem">
+      <div class="container">
+        <p class="mono-label section-eyebrow" data-reveal>01 — Проблема</p>
+        <h2 class="heading-2 section-title" data-reveal>Почему визит откладывают на годы</h2>
+        <div class="problem-grid" data-reveal-group>
+          <article class="card problem-card">
+            <h3 class="title-2 problem-label"><i class="ph ph-x-circle" aria-hidden="true"></i>Как обычно</h3>
+            <ul class="check-list" role="list">
+              <li><i class="ph ph-x" aria-hidden="true"></i>Страшно, что будет больно</li>
+              <li><i class="ph ph-x" aria-hidden="true"></i>Непонятно, сколько всё будет стоить</li>
+              <li><i class="ph ph-x" aria-hidden="true"></i>Лечили, а через год всё заново</li>
+              <li><i class="ph ph-x" aria-hidden="true"></i>Свободное окно только через две недели</li>
+            </ul>
+          </article>
+          <article class="card problem-card is-accent">
+            <h3 class="title-2 problem-label"><i class="ph ph-check-circle" aria-hidden="true"></i>Как у нас</h3>
+            <ul class="check-list" role="list">
+              <li><i class="ph ph-check" aria-hidden="true"></i>Первый визит можно пройти без лечения: осмотр, снимок и разговор</li>
+              <li><i class="ph ph-check" aria-hidden="true"></i>Смета фиксируется до начала работ</li>
+              <li><i class="ph ph-check" aria-hidden="true"></i>Гарантия 2 года по договору</li>
+              <li><i class="ph ph-check" aria-hidden="true"></i>При острой боли принимаем в день обращения</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== 4. Система клиники: закреплённая история ======== -->
+    <section class="system" id="system" aria-labelledby="system-title">
+      <div class="container system-pin">
+        <header class="system-head">
+          <p class="mono-label system-eyebrow">Система клиники</p>
+          <h2 class="heading-2 system-title-main" id="system-title">Четыре правила приёма. Ни одного исключения.</h2>
+        </header>
+        <div class="system-stage">
+          <article class="system-panel">
+            <div class="system-copy">
+              <p class="mono-label system-count"><span aria-hidden="true">01</span><span class="sr-only">Правило 1 из 4</span></p>
+              <p class="mono-label system-zone">Смета</p>
+              <h3 class="system-title">Стоимость известна до начала работ</h3>
+              <p class="body-3 system-text">План и точная смета — на первом приёме. Если врач находит новый вопрос, он останавливается и согласовывает изменения с вами.</p>
+            </div>
+            <div class="system-media"><img src="https://images.pexels.com/photos/6627320/pexels-photo-6627320.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Врач показывает пациенту модель зубов и обсуждает план лечения" loading="lazy"></div>
+          </article>
+          <article class="system-panel">
+            <div class="system-copy">
+              <p class="mono-label system-count"><span aria-hidden="true">02</span><span class="sr-only">Правило 2 из 4</span></p>
+              <p class="mono-label system-zone">Анестезия</p>
+              <h3 class="system-title">Без боли — и без «терпите»</h3>
+              <p class="body-3 system-text">Бережная анестезия и седация. 87% пациентов с дентофобией отмечают, что всё прошло комфортнее, чем они ожидали.</p>
+            </div>
+            <div class="system-media"><img src="https://images.pexels.com/photos/16903641/pexels-photo-16903641.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Пациент спокойно лежит в кресле, врач работает аккуратно и без спешки" loading="lazy"></div>
+          </article>
+          <article class="system-panel">
+            <div class="system-copy">
+              <p class="mono-label system-count"><span aria-hidden="true">03</span><span class="sr-only">Правило 3 из 4</span></p>
+              <p class="mono-label system-zone">Команда</p>
+              <h3 class="system-title">Все специалисты в одном месте</h3>
+              <p class="body-3 system-text">Терапевт, ортопед, хирург и гигиенист ведут вас вместе. Не нужно искать нового врача на каждый этап.</p>
+            </div>
+            <div class="system-media"><img src="https://images.pexels.com/photos/5622026/pexels-photo-5622026.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Два специалиста вместе ведут приём пациента" loading="lazy"></div>
+          </article>
+          <article class="system-panel">
+            <div class="system-copy">
+              <p class="mono-label system-count"><span aria-hidden="true">04</span><span class="sr-only">Правило 4 из 4</span></p>
+              <p class="mono-label system-zone">Гарантия</p>
+              <h3 class="system-title">Два года по договору</h3>
+              <p class="body-3 system-text">На пломбы, коронки и импланты. Если с работой возникает проблема, переделываем бесплатно.</p>
+            </div>
+            <div class="system-media"><img src="https://images.pexels.com/photos/6502305/pexels-photo-6502305.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Модель импланта и коронки на светлом столе" loading="lazy"></div>
+          </article>
+          <div class="system-progress" aria-hidden="true"><span class="system-progress-fill"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== 5. Как это проходит ======== -->
+    <section class="section steps">
+      <div class="container">
+        <p class="mono-label section-eyebrow" data-reveal>02 — Процесс</p>
+        <h2 class="heading-2 section-title" data-reveal>Как проходит лечение</h2>
+        <div class="steps-wrap" data-reveal-group>
+          <div class="steps-line" aria-hidden="true"><span class="steps-dot"></span></div>
+          <article class="step">
+            <span class="step-num">1</span>
+            <h3 class="title-2">Запись за минуту</h3>
+            <p class="body-6">Выберите услугу и время на сайте. Администратор подтвердит запись в течение 15 минут в рабочее время.</p>
+          </article>
+          <article class="step">
+            <span class="step-num">2</span>
+            <h3 class="title-2">Диагностика на первом приёме</h3>
+            <p class="body-6">Осмотр, снимок и план лечения с точной сметой. Приём длится 40 минут.</p>
+          </article>
+          <article class="step">
+            <span class="step-num">3</span>
+            <h3 class="title-2">Лечение по плану</h3>
+            <p class="body-6">Врач ведёт вас от первого этапа до контрольного осмотра. Он входит в стоимость.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== 6. Услуги и цены ======== -->
+    <section class="section services" id="uslugi">
+      <div class="container">
+        <p class="mono-label section-eyebrow" data-reveal>03 — Прайс</p>
+        <h2 class="heading-2 section-title" data-reveal>Услуги и цены</h2>
+        <p class="section-note body-6" data-reveal>Цены указаны за первичный объём работ. Точную смету составим на консультации.</p>
+        <p class="mono-label services-counter" aria-hidden="true"><span data-services-index>01</span>&nbsp;/&nbsp;07</p>
+        <div class="services-progress" aria-hidden="true"><span class="services-progress-fill"></span></div>
+        <div class="services-grid">
+          <article class="card service-card">
+            <div class="service-media"><img src="https://images.pexels.com/photos/12746003/pexels-photo-12746003.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Врач показывает модель зубов пациенту на консультации" loading="lazy"></div>
+            <div class="service-body">
+              <h3 class="title-3">Консультация и план лечения</h3>
+              <p class="service-price">1 400 ₽</p>
+              <p class="caption-2">Осмотр, снимок и план со сметой. Сумма вычитается из стоимости лечения.</p>
+            </div>
+          </article>
+          <article class="card service-card">
+            <div class="service-media"><img src="https://images.pexels.com/photos/6502745/pexels-photo-6502745.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Стоматологический осмотр с зеркалом и зондом" loading="lazy"></div>
+            <div class="service-body">
+              <h3 class="title-3">Гигиена и профилактика</h3>
+              <p class="service-price">от 5 800 ₽</p>
+              <p class="caption-2">Ультразвуковая чистка, Air Flow и полировка. 40 минут.</p>
+            </div>
+          </article>
+          <article class="card service-card">
+            <div class="service-media"><img src="https://images.pexels.com/photos/17792873/pexels-photo-17792873.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Лечение кариеса: врач и ассистент во время процедуры" loading="lazy"></div>
+            <div class="service-body">
+              <h3 class="title-3">Лечение кариеса</h3>
+              <p class="service-price">от 7 400 ₽</p>
+              <p class="caption-2">Лечим под микроскопом с полной изоляцией. Один визит.</p>
+            </div>
+          </article>
+          <article class="card service-card">
+            <div class="service-media"><img src="https://images.pexels.com/photos/6529108/pexels-photo-6529108.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Точная обработка зуба во время эндодонтического лечения" loading="lazy"></div>
+            <div class="service-body">
+              <h3 class="title-3">Лечение каналов</h3>
+              <p class="service-price">от 19 500 ₽</p>
+              <p class="caption-2">Трёхмерная обработка каналов под микроскопом. Сохраняем зуб даже в сложных случаях.</p>
+            </div>
+          </article>
+          <article class="card service-card">
+            <div class="service-media"><img src="https://images.pexels.com/photos/4270087/pexels-photo-4270087.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Модель зуба в руках стоматолога в перчатках" loading="lazy"></div>
+            <div class="service-body">
+              <h3 class="title-3">Коронка из диоксида циркония</h3>
+              <p class="service-price">от 41 800 ₽</p>
+              <p class="caption-2">Цифровое моделирование и примерка до установки. Срок службы от 15 лет.</p>
+            </div>
+          </article>
+          <article class="card service-card">
+            <div class="service-media"><img src="https://images.pexels.com/photos/15688027/pexels-photo-15688027.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Хирургический этап стоматологической процедуры" loading="lazy"></div>
+            <div class="service-body">
+              <h3 class="title-3">Имплантация под ключ</h3>
+              <p class="service-price">от 67 400 ₽</p>
+              <p class="caption-2">Имплант, абатмент и коронка в одной смете. Гарантия 2 года на работы.</p>
+            </div>
+          </article>
+          <article class="card service-card is-accent">
+            <div class="service-body">
+              <h3 class="title-3">Не нашли свою задачу?</h3>
+              <p class="body-6">Позвоните, мы подскажем, какой специалист нужен и что делать сначала.</p>
+              <a class="service-phone" href="tel:+74951203847"><i class="ph ph-phone" aria-hidden="true"></i>+7 (495) 120-38-47</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== 6b. Подбор визита (интерактив) ======== -->
+    <section class="section planner" id="podbor">
+      <div class="container planner-grid">
+        <div class="planner-copy">
+          <p class="mono-label planner-eyebrow" data-reveal>Подбор за 10 секунд</p>
+          <h2 class="heading-2 planner-title">С чего начнём?</h2>
+          <p class="body-3 planner-lead" data-reveal>Выберите, что вас беспокоит, — покажем, кто будет вас вести, что произойдёт на первом приёме и на какую сумму ориентироваться.</p>
+          <div class="planner-chips" role="group" aria-label="Что вас беспокоит?" data-reveal-group>
+            <button class="planner-chip is-active" type="button" aria-pressed="true" data-plan="pain">Болит зуб</button>
+            <button class="planner-chip" type="button" aria-pressed="false" data-plan="fear">Боюсь стоматологов</button>
+            <button class="planner-chip" type="button" aria-pressed="false" data-plan="white">Хочу чистку и белизну</button>
+            <button class="planner-chip" type="button" aria-pressed="false" data-plan="old">Старая пломба или разрушен зуб</button>
+            <button class="planner-chip" type="button" aria-pressed="false" data-plan="kid">Запись для ребёнка</button>
+            <button class="planner-chip" type="button" aria-pressed="false" data-plan="check">Плановый осмотр</button>
+          </div>
+        </div>
+        <div class="card planner-card" data-reveal-group aria-live="polite">
+          <div class="planner-row">
+            <span class="mono-label planner-label">Кто ведёт</span>
+            <p class="title-2" data-plan-doctor>Терапевт — приём в день обращения</p>
+          </div>
+          <div class="planner-row">
+            <span class="mono-label planner-label">Первый шаг</span>
+            <p data-plan-step>Осмотр, снимок и снятие боли. Обычно хватает одного визита.</p>
+          </div>
+          <div class="planner-row">
+            <span class="mono-label planner-label">Ориентир по цене</span>
+            <p data-plan-price>Консультация 1 400 ₽ — вычитается из стоимости лечения</p>
+          </div>
+          <div class="planner-row">
+            <span class="mono-label planner-label">Время</span>
+            <p class="planner-time"><i class="ph ph-clock" aria-hidden="true"></i><span data-plan-time>40 минут</span></p>
+          </div>
+          <a class="btn btn-primary btn-lg btn-block magnetic" href="#kontakty">Записаться с этим запросом<i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+          <p class="caption-5 planner-note">Услуга из формы уже выбрана под ваш запрос — останется ввести имя и телефон.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== 7. Врачи ======== -->
+    <section class="section doctors" id="vrachi">
+      <div class="container">
+        <p class="mono-label section-eyebrow" data-reveal>04 — Команда</p>
+        <h2 class="heading-2 section-title" data-reveal>Врачи</h2>
+        <div class="doctors-grid" data-reveal-group>
+          <article class="card doctor-card">
+            <span class="doctor-ghost" aria-hidden="true">01</span>
+            <div class="doctor-photo"><img src="https://images.pexels.com/photos/6749765/pexels-photo-6749765.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Анна Клименко, терапевт и эндодонтист" loading="lazy"></div>
+            <h3 class="title-2">Анна Клименко</h3>
+            <p class="caption-2">Терапевт, эндодонтист · стаж 11 лет</p>
+          </article>
+          <article class="card doctor-card">
+            <span class="doctor-ghost" aria-hidden="true">02</span>
+            <div class="doctor-photo"><img src="https://images.pexels.com/photos/17792882/pexels-photo-17792882.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Дмитрий Орлов, ортопед" loading="lazy"></div>
+            <h3 class="title-2">Дмитрий Орлов</h3>
+            <p class="caption-2">Ортопед · стаж 14 лет</p>
+          </article>
+          <article class="card doctor-card">
+            <span class="doctor-ghost" aria-hidden="true">03</span>
+            <div class="doctor-photo"><img src="https://images.pexels.com/photos/32254667/pexels-photo-32254667.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Марина Сабирова, хирург и имплантолог" loading="lazy"></div>
+            <h3 class="title-2">Марина Сабирова</h3>
+            <p class="caption-2">Хирург, имплантолог · стаж 9 лет</p>
+          </article>
+          <article class="card doctor-card">
+            <span class="doctor-ghost" aria-hidden="true">04</span>
+            <div class="doctor-photo"><img src="https://images.pexels.com/photos/6812464/pexels-photo-6812464.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Павел Ерёмин, детский стоматолог" loading="lazy"></div>
+            <h3 class="title-2">Павел Ерёмин</h3>
+            <p class="caption-2">Детский стоматолог · стаж 7 лет</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== 7b. Клиника (фото) ======== -->
+    <section class="section gallery" id="klinika">
+      <div class="container">
+        <p class="mono-label section-eyebrow" data-reveal>05 — Клиника</p>
+        <h2 class="heading-2 section-title" data-reveal>Как выглядит клиника</h2>
+        <div class="gallery-grid" data-reveal-group>
+          <figure class="gallery-item is-tall">
+            <div class="gallery-media"><img src="https://images.pexels.com/photos/7422520/pexels-photo-7422520.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Светлый лечебный кабинет стоматологии с современным оборудованием" loading="lazy"></div>
+            <figcaption class="caption-4">Лечебный кабинет</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <div class="gallery-media"><img src="https://images.pexels.com/photos/6809652/pexels-photo-6809652.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Стоматологическое кресло в клинике" loading="lazy"></div>
+            <figcaption class="caption-4">Кабинет диагностики</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <div class="gallery-media"><img src="https://images.pexels.com/photos/6502543/pexels-photo-6502543.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Стоматические инструменты рядом с креслом" loading="lazy"></div>
+            <figcaption class="caption-4">Стерильные инструменты</figcaption>
+          </figure>
+        </div>
+        <p class="caption-5 gallery-note">Фотографии и видео демонстрационные: Pexels, свободная лицензия.</p>
+      </div>
+    </section>
+
+    <!-- ======== 8. Отзывы + цифры ======== -->
+    <section class="section reviews" id="otzyvy">
+      <div class="container">
+        <p class="mono-label section-eyebrow" data-reveal>06 — Отзывы</p>
+        <h2 class="heading-2 section-title" data-reveal>Отзывы пациентов</h2>
+        <div class="stats-row" data-reveal-group>
+          <div class="stat"><span class="stat-num" data-count="4.9" data-decimals="1">4,9</span><span class="caption-2">рейтинг на Яндекс Картах</span></div>
+          <div class="stat"><span class="stat-num" data-count="278">278</span><span class="caption-2">отзывов</span></div>
+          <div class="stat"><span class="stat-num" data-count="23600">23 600</span><span class="caption-2">пациентов с 2013 года</span></div>
+          <div class="stat"><span class="stat-num" data-count="8">8</span><span class="caption-2">врачей в команде</span></div>
+        </div>
+        <p class="mono-label reviews-counter" aria-hidden="true"><span data-reviews-index>01</span>&nbsp;/&nbsp;03</p>
+      </div>
+      <div class="reviews-pin">
+        <div class="container reviews-track-outer">
+          <div class="reviews-track">
+            <article class="card review-card">
+              <div class="review-head">
+                <span class="stars" aria-hidden="true"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></span>
+                <time class="caption-4" datetime="2026-03-14">14 марта 2026</time>
+              </div>
+              <p class="body-3">«Десять лет не ходила к стоматологу из страха. Здесь на первом визите просто посмотрели, сделали снимок и объяснили план. Лечила три зуба, всё спокойно, без боли и без «а теперь ещё вот это за доплату»».</p>
+              <span class="review-who"><span class="avatar avatar-xs" aria-hidden="true">ИК</span><span><strong class="title-4">Ирина Ковалёва</strong><span class="caption-5">лечение кариеса</span></span></span>
+            </article>
+            <article class="card review-card">
+              <div class="review-head">
+                <span class="stars" aria-hidden="true"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></span>
+                <time class="caption-4" datetime="2026-04-02">2 апреля 2026</time>
+              </div>
+              <p class="body-3">«Смета на первом приёме совпала с итоговой до рубля. Лечил два канала под микроскопом, врач показывал каждый этап на экране».</p>
+              <span class="review-who"><span class="avatar avatar-xs" aria-hidden="true">МЖ</span><span><strong class="title-4">Максим Жданов</strong><span class="caption-5">лечение каналов</span></span></span>
+            </article>
+            <article class="card review-card">
+              <div class="review-head">
+                <span class="stars" aria-hidden="true"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></span>
+                <time class="caption-4" datetime="2026-05-27">27 мая 2026</time>
+              </div>
+              <p class="body-3">«Ребёнок раньше плакал ещё в коридоре стоматологии. Здесь он сам просится на приём: показывают мультик, дают потрогать инструменты, лечат в игровой форме».</p>
+              <span class="review-who"><span class="avatar avatar-xs" aria-hidden="true">ОТ</span><span><strong class="title-4">Ольга Тарасова</strong><span class="caption-5">детская стоматология</span></span></span>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== 9. FAQ ======== -->
+    <section class="section faq" id="voprosy">
+      <div class="container faq-inner">
+        <p class="mono-label section-eyebrow" data-reveal>07 — Вопросы</p>
+        <h2 class="heading-2 section-title" data-reveal>Частые вопросы</h2>
+        <div class="faq-list" data-reveal-group>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false">
+              <span class="title-3">Сколько стоит первичный приём?</span>
+              <i class="ph ph-plus faq-icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq-a"><p class="body-6">Консультация с планом лечения стоит 1 400 ₽. Если вы начинаете лечение в тот же день, сумма вычитается из его стоимости.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false">
+              <span class="title-3">Больно ли будет?</span>
+              <i class="ph ph-plus faq-icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq-a"><p class="body-6">Нет. Мы используем бережную анестезию и седацию. 87% пациентов, которые боялись стоматологов, отметили, что всё прошло комфортнее ожиданий.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false">
+              <span class="title-3">Как быстро вы снимете острую боль?</span>
+              <i class="ph ph-plus faq-icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq-a"><p class="body-6">При острой боли записываем на день обращения. Обычно хватает одного визита: осмотр, снимок и первое вмешательство.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false">
+              <span class="title-3">Я боюсь стоматологов. Что вы предложите?</span>
+              <i class="ph ph-plus faq-icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq-a"><p class="body-6">Первый визит можно пройти без лечения: осмотр, снимок и разговор с врачом. Для дальнейшего лечения подойдёт седация, вы будете спать и почти ничего не запомните.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false">
+              <span class="title-3">Смета может вырасти в процессе?</span>
+              <i class="ph ph-plus faq-icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq-a"><p class="body-6">Нет. План и стоимость фиксируются до начала работ. Если врач находит новый вопрос, лечение останавливается, и изменения согласовываются с вами до продолжения.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false">
+              <span class="title-3">Какая гарантия на лечение?</span>
+              <i class="ph ph-plus faq-icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq-a"><p class="body-6">Два года по договору на пломбы, коронки и импланты. Если с работой возникает проблема, переделываем бесплатно.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false">
+              <span class="title-3">Можно ли перенести или отменить запись?</span>
+              <i class="ph ph-plus faq-icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq-a"><p class="body-6">Да, без штрафов. Напишите нам в мессенджер или позвоните, и мы подберём другое время.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false">
+              <span class="title-3">Работаете ли вы с ДМС?</span>
+              <i class="ph ph-plus faq-icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq-a"><p class="body-6">Да, мы принимаем основные программы ДМС. Уточните свою у администратора при записи.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== 10. Финальный CTA + форма ======== -->
+    <section class="section contact section-media is-media" id="kontakty">
+      <img class="section-bg" src="https://images.pexels.com/photos/6812461/pexels-photo-6812461.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" loading="lazy" aria-hidden="true">
+      <div class="section-scrim" aria-hidden="true"></div>
+      <span class="contact-deco" aria-hidden="true">ЭМАЛЬ</span>
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <p class="mono-label section-eyebrow" data-reveal>08 — Контакты</p>
+          <h2 class="heading-2 section-title" data-reveal>Запишитесь на приём</h2>
+          <p class="body-3 contact-lead" data-reveal>Оставьте телефон, администратор перезвонит, подберёт время и ответит на вопросы.</p>
+          <ul class="check-list contact-list" role="list" data-reveal>
+            <li><i class="ph ph-check" aria-hidden="true"></i>Консультация 1 400 ₽ вычитается из стоимости лечения</li>
+            <li><i class="ph ph-check" aria-hidden="true"></i>Перенос и отмена записи без штрафов</li>
+            <li><i class="ph ph-check" aria-hidden="true"></i>Подтверждение записи в течение 15 минут в рабочее время</li>
+          </ul>
+          <address class="contact-block" data-reveal>
+            <a class="contact-phone" href="tel:+74951203847">+7 (495) 120-38-47</a>
+            <p class="caption-2"><i class="ph ph-map-pin" aria-hidden="true"></i>Москва, ул. Малая Бронная, 12 · метро Маяковская</p>
+            <p class="caption-2"><i class="ph ph-clock" aria-hidden="true"></i>Будни с 9:00 до 21:00 · суббота с 10:00 до 20:00 · воскресенье с 10:00 до 18:00</p>
+            <a class="contact-maps" href="https://yandex.ru/maps/?text=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9C%D0%B0%D0%BB%D0%B0%D1%8F%20%D0%91%D1%80%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F%2C%2012" target="_blank" rel="noopener">Открыть в Яндекс Картах<i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
+            <div class="contact-social">
+              <span class="chip is-disabled" aria-disabled="true" title="Подключается при сборке">Telegram</span>
+              <span class="chip is-disabled" aria-disabled="true" title="Подключается при сборке">WhatsApp</span>
+            </div>
+          </address>
+        </div>
+        <div class="form-card card" data-reveal>
+          <form class="book-form" id="book-form" novalidate>
+            <div class="field">
+              <label class="caption-3" for="f-name">Имя</label>
+              <input class="input" type="text" id="f-name" name="name" placeholder="Как к вам обращаться" autocomplete="name" required>
+              <span class="field-error caption-5" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label class="caption-3" for="f-phone">Телефон</label>
+              <input class="input" type="tel" id="f-phone" name="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel" required>
+              <span class="field-error caption-5" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label class="caption-3" for="f-service">Услуга</label>
+              <div class="select-wrap">
+                <select class="input" id="f-service" name="service">
+                  <option value="consult" selected>Консультация и план лечения</option>
+                  <option value="hygiene">Гигиена и профилактика</option>
+                  <option value="caries">Лечение кариеса</option>
+                  <option value="canals">Лечение каналов</option>
+                  <option value="crown">Коронка из диоксида циркония</option>
+                  <option value="implant">Имплантация под ключ</option>
+                  <option value="kids">Детская стоматология</option>
+                </select>
+                <i class="ph ph-caret-down" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="field">
+              <label class="caption-3" for="f-note">Комментарий <span class="caption-5 is-optional">по желанию</span></label>
+              <input class="input" type="text" id="f-note" name="note" placeholder="Например: болит зуб справа внизу">
+            </div>
+            <button class="btn btn-primary btn-lg btn-block magnetic" type="submit">
+              <span class="btn-label">Записаться на приём</span>
+              <span class="btn-loader" aria-hidden="true"></span>
+            </button>
+            <p class="form-note caption-5">Нажимая кнопку, вы соглашаетесь с <a href="privacy.html">политикой обработки персональных данных</a>.</p>
+          </form>
+          <div class="form-success" hidden>
+            <i class="ph ph-check-circle" aria-hidden="true"></i>
+            <h3 class="title-2">Заявка отправлена</h3>
+            <p class="body-6">Администратор подтвердит запись в течение 15 минут в рабочее время. Если сейчас ночь, мы перезвоним с 9:00.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======== Футер ======== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="nav-brand" href="#top" aria-label="Эмаль, на главную">
+          <span class="brand-mark" aria-hidden="true">Э</span>
+          <span class="brand-name">Эмаль</span>
+        </a>
+        <p class="caption-2">Стоматология в центре Москвы. Лечим бережно и по смете.</p>
+        <p class="caption-5 footer-demo">Демонстрационный проект: название, цены и отзывы вымышлены. Концепт — <a href="https://sergeykomyza.ru/" target="_blank" rel="noopener">sergeykomyza.ru</a></p>
+      </div>
+      <nav class="footer-col" aria-label="Разделы страницы">
+        <h3 class="caption-3 footer-head">Разделы</h3>
+        <ul role="list">
+          <li><a class="footer-link" href="#uslugi">Услуги</a></li>
+          <li><a class="footer-link" href="#vrachi">Врачи</a></li>
+          <li><a class="footer-link" href="#klinika">Клиника</a></li>
+          <li><a class="footer-link" href="#otzyvy">Отзывы</a></li>
+          <li><a class="footer-link" href="#voprosy">Частые вопросы</a></li>
+          <li><a class="footer-link" href="#kontakty">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="footer-col">
+        <h3 class="caption-3 footer-head">Контакты</h3>
+        <ul role="list">
+          <li><a class="footer-link" href="tel:+74951203847">+7 (495) 120-38-47</a></li>
+          <li><span class="caption-2">Москва, ул. Малая Бронная, 12</span></li>
+          <li><span class="caption-2">Будни с 9:00 до 21:00 · выходные с 10:00</span></li>
+          <li><span class="caption-5">Лицензия на медицинскую деятельность {{ЛО-77-01-012345}}</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span class="caption-5">© 2026 Стоматология «Эмаль»</span>
+      <span class="footer-legal">
+        <a class="footer-link" href="privacy.html">Политика конфиденциальности</a>
+        <a class="footer-link" href="terms.html">Условия оказания услуг</a>
+      </span>
+    </div>
+  </footer>
+
+  <!-- ======== Скрипты ======== -->
+  <script src="js/vendor/gsap.min.js" defer></script>
+  <script src="js/vendor/ScrollTrigger.min.js" defer></script>
+  <script src="js/vendor/CustomEase.min.js" defer></script>
+  <script src="js/vendor/lenis.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
