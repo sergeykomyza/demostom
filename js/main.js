@@ -135,17 +135,34 @@
     });
 
     gsap.utils.toArray('[data-reveal-group]').forEach((group) => {
-      // «Как обычно / как у нас»: карточки съезжаются с разных сторон
+      // «Как обычно / как у нас»: карточки съезжаются с разных сторон.
+      // Горизонтальный выезд только на десктопе: на мобиле грид одноколоночный,
+      // карточки на всю ширину, смещение ±40px больше паддинга контейнера
+      // и вылезает за край вьюпорта.
       if (group.classList.contains('problem-grid')) {
-        gsap.from(group.children, {
-          x: (i) => (i === 0 ? -40 : 40),
-          autoAlpha: 0,
-          duration: 0.9,
-          ease: EASE,
-          stagger: 0.12,
-          clearProps: 'transform',
-          scrollTrigger: { trigger: group, start: 'top 82%', once: true }
-        });
+        gsap.matchMedia()
+          .add('(min-width: 821px) and (prefers-reduced-motion: no-preference)', () => {
+            gsap.from(group.children, {
+              x: (i) => (i === 0 ? -40 : 40),
+              autoAlpha: 0,
+              duration: 0.9,
+              ease: EASE,
+              stagger: 0.12,
+              clearProps: 'transform',
+              scrollTrigger: { trigger: group, start: 'top 82%', once: true }
+            });
+          })
+          .add('(max-width: 820px)', () => {
+            gsap.from(group.children, {
+              y: 32,
+              autoAlpha: 0,
+              duration: 0.8,
+              ease: EASE,
+              stagger: 0.12,
+              clearProps: 'transform',
+              scrollTrigger: { trigger: group, start: 'top 82%', once: true }
+            });
+          });
         return;
       }
       gsap.from(group.children, {
