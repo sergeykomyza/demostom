@@ -501,9 +501,13 @@
         const target = document.querySelector(href);
         if (!target) return;
         e.preventDefault();
+        // Сначала закрываем меню: setMenu(false) синхронно делает lenis.start().
+        // У остановленного Lenis scrollTo молча игнорируется (isStopped),
+        // поэтому скролл до закрытия меню не срабатывал — ссылки на мобиле
+        // «не работали»: меню закрывалось, страница оставалась на месте.
+        if (window.__closeMobileMenu) window.__closeMobileMenu();
         if (lenisInstance) lenisInstance.scrollTo(target, { offset: -88, duration: 1.2 });
         else target.scrollIntoView({ behavior: prefersReduced ? 'auto' : 'smooth' });
-        if (window.__closeMobileMenu) window.__closeMobileMenu();
       });
     });
   }
